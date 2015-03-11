@@ -19,20 +19,19 @@ npm install
 
 ## example usage
 From the command line:
-> See index.js for a complete list of options
 ```bash
 node index.js --color --neighborhoods=berkeley,berkeley_north_hills --maxAsk=5000 --bedrooms=4
 ```
+> See index.js for a complete list of options
 
 Or in node/js:
-> This will/needs to be refactored to behave like a normal node module.
-> (e.g. `var scraper = require('scrapemesomethinggood');`)
 ```js
 var Scraper = require('./scrapemesomethinggood/lib/scraper');
 var scraper = new Scraper();
 scraper.start(...);
-
 ```
+> This will/needs to be refactored to behave like a normal node module.
+> (e.g. `var scraper = require('scrapemesomethinggood');`)
 
 ## contributing
 Create a fork, (hack hack hack), submit a pull request
