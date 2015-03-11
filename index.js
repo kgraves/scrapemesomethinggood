@@ -2,7 +2,7 @@
 
 var app = require('./package.json');
 var opts = require('commander');
-var scraper = require('./lib/scraper');
+var Scraper = require('./lib/scraper');
 
 // NOTE the `color` option is to support chalk and printing colors.
 //      you must specify this option to get colors!
@@ -22,4 +22,6 @@ opts
   // .option('-r, --recipients [items]',         'Comma delimited list of recipients', 'bar@gmail.com,foo@baz.com')
   .parse(process.argv);
 
-scraper.prototype.start(opts);
+// scraper.prototype.start(opts);
+var scraper = new Scraper();
+scraper.start(opts);
